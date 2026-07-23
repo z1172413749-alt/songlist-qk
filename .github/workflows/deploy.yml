@@ -24,20 +24,16 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: '22'               # 升级到 22 避免警告
           cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
-      - name: Debug Secrets existence
-  run: |
-    echo "PUBLIC_SUPABASE_URL exists: ${{ secrets.PUBLIC_SUPABASE_URL != '' }}"
-    echo "PUBLIC_SUPABASE_PUBLISHABLE_KEY exists: ${{ secrets.PUBLIC_SUPABASE_PUBLISHABLE_KEY != '' }}"
-    echo "SUPABASE_SECRET_KEY exists: ${{ secrets.SUPABASE_SECRET_KEY != '' }}"
-    echo "AUTH_SECRET exists: ${{ secrets.AUTH_SECRET != '' }}"
 
       - name: Build
-        run: npm run build
+        run: |
+          echo "PUBLIC_SUPABASE_URL is: $PUBLIC_SUPABASE_URL"
+          npm run build
         env:
           PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
           PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
