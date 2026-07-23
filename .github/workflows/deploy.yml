@@ -35,10 +35,10 @@ jobs:
           echo "PUBLIC_SUPABASE_URL is: $PUBLIC_SUPABASE_URL"
           npm run build
         env:
-          PUBLIC_SUPABASE_URL: ${{ secrets.PUBLIC_SUPABASE_URL }}
-          PUBLIC_SUPABASE_PUBLISHABLE_KEY: ${{ secrets.PUBLIC_SUPABASE_PUBLISHABLE_KEY }}
-          SUPABASE_SECRET_KEY: ${{ secrets.SUPABASE_SECRET_KEY }}
-          AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
+          PUBLIC_SUPABASE_URL: "https://aracrovpjnrbpjiqqetb.supabase.co"
+          PUBLIC_SUPABASE_PUBLISHABLE_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyYWNyb3Zwam5yYnBqaXFxZXRiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQ3ODQxMzQsImV4cCI6MjEwMDM2MDEzNH0.gfAaGBXBs0Z1XppnHXPWGa56YHcZ2tjOO53TIkV558Q"
+          SUPABASE_SECRET_KEY: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyYWNyb3Zwam5yYnBqaXFxZXRiIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc4NDc4NDEzNCwiZXhwIjoyMTAwMzYwMTM0fQ.j3CPe49B0JTMGCaUUukvOOfesn4f6naUwvumaP3TIQE"
+          AUTH_SECRET: "1055e0af200d60058782a7018ce2b4b1cc5410d794450e45daa4e24ec480a88"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
