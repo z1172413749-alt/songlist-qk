@@ -4,7 +4,9 @@ SvelteKit + Supabase 搭建的单主播歌单站。观众查歌、筛选、提�
 
 前台 `/` · 后台登录 `/admin/login` · 后台 `/admin`
 
-## 快速开始
+## 快速开始ba
+
+ba
 
 ```bash
 npm install
