@@ -29,6 +29,12 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
+      - name: Debug Secrets existence
+  run: |
+    echo "PUBLIC_SUPABASE_URL exists: ${{ secrets.PUBLIC_SUPABASE_URL != '' }}"
+    echo "PUBLIC_SUPABASE_PUBLISHABLE_KEY exists: ${{ secrets.PUBLIC_SUPABASE_PUBLISHABLE_KEY != '' }}"
+    echo "SUPABASE_SECRET_KEY exists: ${{ secrets.SUPABASE_SECRET_KEY != '' }}"
+    echo "AUTH_SECRET exists: ${{ secrets.AUTH_SECRET != '' }}"
 
       - name: Build
         run: npm run build
