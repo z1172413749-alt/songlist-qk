@@ -27,7 +27,7 @@
 </script>
 
 <svelte:head>
-  <title>公开歌单 | QingKong Songlist</title>
+  <title>雁木梦游中の歌单</title>
 </svelte:head>
 
 <div class="space-y-8 lg:space-y-10">
