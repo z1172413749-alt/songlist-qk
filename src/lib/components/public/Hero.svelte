@@ -21,7 +21,7 @@
       aria-hidden="true"
       fetchpriority="high"
       decoding="async"
-      class="hero-background pointer-events-none absolute inset-0 h-full w-full object-cover"
+      class="hero-background pointer-events-none absolute inset-0 h-full w-full"
     />
   {/if}
   <div class="hero-overlay pointer-events-none absolute inset-0"></div>
