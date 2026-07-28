@@ -26,11 +26,11 @@
       <span
         class="inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-[12px] bg-[var(--color-accent)] text-sm font-semibold text-white shadow-sm"
       >
-        雁
+        🧃
       </span>
       <span class="flex min-w-0 flex-col leading-tight">
         <span class="text-sm font-semibold text-[var(--color-text)]">雁木 梦游中</span>
-        <span class="text-[11px] text-[var(--color-text-muted)]">木的歌单与愿望单</span>
+        <span class="text-[11px] text-[var(--color-text-muted)]">愿望单收集中</span>
       </span>
     </a>
 
